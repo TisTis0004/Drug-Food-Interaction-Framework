@@ -1,0 +1,9 @@
+.env
+__pycache__
+.vscode
+data_embeddings
+data_food_flat
+data_severity_labeled
+data_with_food_extraction
+outputs
+*.docx
