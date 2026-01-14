@@ -45,7 +45,7 @@ This project implements a complete ML pipeline for drug-food interaction analysi
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/TisTis0004/Drug-Food-Interaction-Framework
 cd "Drug-food interaction2"
 ```
 
@@ -385,19 +385,6 @@ BATCH_SIZE = 32  # Change from 64
 - **Inference time:** <100ms per query (k-NN + classifier)
 - **Streamlit app:** Supports ~50-100 concurrent users on standard hardware
 
----
-
-## Known Limitations & Uncertainties
-
-1. **No automated tests** – Project lacks pytest/unittest coverage. Recommend adding integration tests.
-2. **No requirements.txt** – Dependencies inferred from imports. Running `pip freeze > requirements.txt` is advisable.
-3. **Gemini API dependency** – Free tier has daily limits. Production use may require paid API key.
-4. **Arabic NLP quality** – Explanations depend on Gemini model quality; fallback to local transformers may be less fluent.
-5. **Limited data versioning** – No mechanism to track DrugBank data version or retrain schedule.
-6. **No CI/CD pipeline** – No GitHub Actions or deployment automation currently in place.
-
----
-
 ## How to Verify Setup
 
 Run this verification script:
@@ -439,12 +426,6 @@ To contribute:
 
 ---
 
-## License
-
-[Specify license if applicable, e.g., MIT, Apache 2.0]
-
----
-
 ## References
 
 - **DrugBank Database:** https://www.drugbank.ca/
@@ -454,22 +435,6 @@ To contribute:
 
 ---
 
-## Contact & Support
-
-For issues or questions, please open a GitHub issue or contact the maintainers.
-
 **Last Updated:** January 2026
 
 ---
-
-## TODO / Future Enhancements
-
-- [ ] Add automated test suite (pytest)
-- [ ] Create `requirements.txt` with pinned versions
-- [ ] Add CI/CD pipeline (GitHub Actions)
-- [ ] Support for additional languages (Spanish, French, etc.)
-- [ ] Docker containerization
-- [ ] API endpoint (FastAPI/Flask) for integration
-- [ ] Database backend (PostgreSQL) for scalability
-- [ ] Monitoring & logging system
-- [ ] Regular DrugBank data updates
